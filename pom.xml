@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>SrpingDataTask1</module>
+        <module>SpringDataTask1</module>
     </modules>
 
     <parent>
