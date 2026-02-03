@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>SpringDataTask1</module>
+        <module>ProjectionsTask</module>
+        <module>ProjectionsTask</module>
     </modules>
 
     <parent>
