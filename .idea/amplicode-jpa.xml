@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AmplicodeJpaIdeaProjectConfig" snapshotDbType="H2">
+  <component name="AmplicodeJpaIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
-    <option name="isSnapshotDb" value="false" />
-    <option name="snapshotDbValue" value="2b8d5190-5b9c-4b9b-a0ef-632baa844d03" />
-    <option name="snapshotModelValue" value="Default" />
   </component>
 </project>
