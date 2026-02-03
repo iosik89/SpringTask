@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AmplicodeJpaDataSourceConfig">
+    <data-sources>
+      <data-source id="2b8d5190-5b9c-4b9b-a0ef-632baa844d03" name="testdb" url="jdbc:h2:mem:testdb" driverClass="org.h2.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="2b8d5190-5b9c-4b9b-a0ef-632baa844d03" persistence-unit-name="Book" />
+    </data-source-infos>
+  </component>
+</project>
