@@ -14,9 +14,11 @@ import java.util.List;
 @Table(name = "users")
 @Getter
 @Setter
-public class User implements UserDetails {
+public class User {
 
     private static final long serialVersionUID = 1L;
+
+    private boolean isAccountNonLocked = true;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -36,22 +38,9 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Card> cards;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(() -> "ROLE_" + role.name());
+    public boolean isAccountNonLocked() {
+        return this.isAccountNonLocked; // Читаем значение из поля
     }
-
-    @Override
-    public boolean isAccountNonExpired() { return true; }
-
-    @Override
-    public boolean isAccountNonLocked() { return true; }
-
-    @Override
-    public boolean isCredentialsNonExpired() { return true; }
-
-    @Override
-    public boolean isEnabled() { return true; }
 
     // ===== Перечисление ролей =====
     public enum Role {
